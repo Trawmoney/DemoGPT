@@ -55,17 +55,9 @@ initCode()
 
 # Text input
 
-openai_api_key = st.sidebar.text_input(
-    "OpenAI API Key",
-    placeholder="sk-...",
-    value=os.getenv("OPENAI_API_KEY", ""),
-    type="password",
-)
+openai_api_key = "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"
 
-openai_api_base = st.sidebar.text_input(
-    "Open AI base URL",
-    placeholder="https://api.openai.com/v1",
-)
+openai_api_base = "https://openrouter.ai/api/v1"
 
 models = (
     "gpt-3.5-turbo-0613",
